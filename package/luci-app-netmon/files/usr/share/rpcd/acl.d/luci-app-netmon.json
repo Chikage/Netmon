@@ -1,0 +1,10 @@
+{
+  "luci-app-netmon": {
+    "description": "Read client traffic statistics and configure Netmon",
+    "read": {
+      "ubus": {"luci.netmon": ["status"]},
+      "uci": ["netmon"]
+    },
+    "write": {"uci": ["netmon"]}
+  }
+}

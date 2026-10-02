@@ -1,0 +1,14 @@
+config netmon 'main'
+	option enabled '1'
+	option interval '5'
+	option max_flows '32768'
+	list networks 'lan'
+
+# Optional custom rules are evaluated before built-in port heuristics.
+# config rule
+# 	option enabled '1'
+# 	option name 'My BitTorrent client'
+# 	option category 'p2p'
+# 	option proto 'any'
+# 	option ports '51413'
+# 	option cidr '203.0.113.0/24'

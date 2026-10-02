@@ -1,0 +1,18 @@
+{
+  "admin/status/netmon": {
+    "title": "客户端流量",
+    "order": 70,
+    "action": {"type": "firstchild"},
+    "depends": {"acl": ["luci-app-netmon"]}
+  },
+  "admin/status/netmon/overview": {
+    "title": "流量统计",
+    "order": 10,
+    "action": {"type": "view", "path": "netmon/overview"}
+  },
+  "admin/status/netmon/settings": {
+    "title": "统计设置",
+    "order": 20,
+    "action": {"type": "view", "path": "netmon/settings"}
+  }
+}
